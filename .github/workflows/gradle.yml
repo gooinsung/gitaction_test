@@ -67,8 +67,12 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      run:
-        aws deploy create-deployment --application-name platfra --deployment-group-name platfra_group --file-exists-behavior OVERWRITE --s3-location bucket=platfra-code,bundleType=zip,key=platfra.zip --region ap-northeast-2
+      run: |
+        aws deploy create-deployment \
+        --application-name platfra_test \
+        --deployment-group-name platfra_test_group \
+        --file-exists-behavior OVERWRITE \
+        --s3-location bucket=platfra-code,bundleType=zip,key=platfra.zip --region ap-northeast-2
 
 
     
