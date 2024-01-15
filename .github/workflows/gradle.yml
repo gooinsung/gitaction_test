@@ -42,7 +42,7 @@ jobs:
 
     # script files 복사
     - name: Copy script
-      run: cp ./script/*.sh ./deploy
+      run: cp ./scripts/*.sh ./deploy
 
     # 압축 파일 형태로 전달
     - name: Make zip file
