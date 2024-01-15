@@ -59,7 +59,7 @@ jobs:
 
     # S3 uplaod
     - name: Upload to S3
-      run: aws s3 cp --region ap-northeast-2 ./springboot-intro-build.zip s3://platfra-code
+      run: aws s3 cp --region ap-northeast-2 ./platfra.zip s3://platfra-code
 
 
     # Deploy
