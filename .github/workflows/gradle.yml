@@ -18,7 +18,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '21'
-        distribution: 'termurin'
+        distribution: 'temurin'
 
     # gradlew 에 권한 부여
     - name: Grant execute permission for gradlew
